@@ -9,7 +9,7 @@
 \documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv 主题
-\moderncvstyle{casual}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
+\moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
 \moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
 %\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
 
@@ -19,20 +19,19 @@
 
 % 调整页面出血
 \usepackage[scale=0.75]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
 
 % 个人信息
 \name{高远}{}
-\title{简历题目 (可选项)}                     % 可选项、如不需要可删除本行
-\address{街道及门牌号}{邮编及城市}            % 可选项、如不需要可删除本行
+\title{justgaoyuan}                     % 可选项、如不需要可删除本行
 \phone[mobile]{+15951989141}              % 可选项、如不需要可删除本行
-\phone[fixed]{+2~(345)~678~901}               % 可选项、如不需要可删除本行
-\phone[fax]{+3~(456)~789~012}                 % 可选项、如不需要可删除本行
+\phone[fixed]{+15951989141}               % 可选项、如不需要可删除本行
 \email{justgaoyuan@gmail.com}                    % 可选项、如不需要可删除本行
-\homepage{www.xialongli.com}                  % 可选项、如不需要可删除本行
-\extrainfo{附加信息 (可选项)}                 % 可选项、如不需要可删除本行
-\photo[64pt][0.4pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
-\quote{引言(可选项)}                          % 可选项、如不需要可删除本行
+\address{南京玄武区}            % 可选项、如不需要可删除本行
+\homepage{https://github.com/justgaoyuan}                  % 可选项、如不需要可删除本行
+\extrainfo{}                 % 可选项、如不需要可删除本行
+\photo[64pt][0.1pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+\quote{}                          % 可选项、如不需要可删除本行
 
 % 显示索引号;仅用于在简历中使用了引言
 %\makeatletter
@@ -49,63 +48,91 @@
 \begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
 \maketitle
 
-\section{教育背景}
-\cventry{2008--2012}{本科}{江苏科技大学}{城市}{\textit{计算机科学与技术}}{主要专业课程有数字电子技术基础、数据结构、C++、计算机组成原理、微机原理与接口技术、数据库等}  % 第3到第6编码可留白
+\section{基本信息}
+\cvcomputer{姓名}{高远}{性别}{男}
+\cvcomputer{民族}{汉族}{籍贯}{江苏宿迁}
+\cvcomputer{学历}{本科}{专业}{计算机科学与技术}
+\cvcomputer{出生日期}{1989-4-20}{政治面貌}{中共党员}
 
-\section{毕业论文}
-\cvitem{题目}{\emph{题目}}
-\cvitem{导师}{导师}
-\cvitem{说明}{\small 论文简介}
+\section{教育背景}
+\cventry{2008--2012}{本科}{江苏科技大学}{镇江}{\textit{计算机科学与技术}}{主要专业课程有数字电子技术基础、数据结构、C++、计算机组成原理、微机原理与接口技术、数据库等}  % 第3到第6编码可留白
+
+% \section{毕业论文}
+% \cvitem{题目}{\emph{题目}}
+% \cvitem{导师}{导师}
+% \cvitem{说明}{\small 论文简介}
 
 \section{工作背景}
-\subsection{专业}
-\cventry{年 -- 年}{职位}{公司}{城市}{}{不超过1--2行的概况说明\newline{}%
+\cventry{2012 -- 至今}{软件工程师}{南京}{吉隆光纤通信股份有限公司}{}{公司主要业务为光纤通信仪器仪表的研发生产销售。%\newline{}%
 工作内容:%
 \begin{itemize}%
-\item 工作内容 1;
-\item 工作内容 2、 含二级内容:
-  \begin{itemize}%
-  \item 二级内容 (a);
-  \item 二级内容 (b)、含三级内容 (不建议使用);
-    \begin{itemize}
-    \item 三级内容 i;
-    \item 三级内容 ii;
-    \item 三级内容 iii;
-    \end{itemize}
-  \item 二级内容 (c);
-  \end{itemize}
-\item 工作内容 3。
+\item 参与公司主打产品（光纤熔接机）新平台软件的开发，负责部分驱动程序及应用程序开发工作;
+\item 熟悉openembeded，使用其构建嵌入式linux开发环境;
+\item 维护软件小团队的服务器，熟练使用git，搭建gitweb，gitlab等等代码管理工具。
 \end{itemize}}
-\cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
-\subsection{其他}
-\cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
+
+\section{项目经验}
+\cventry{2012.9--2014.4}{光纤熔接机新一代控制软件开发}{linux}{arm+fpga}{c/c++}{
+\begin{itemize}%
+	\item 项目描述：
+		\begin{itemize}
+			\item 光纤推进与对准：通过两路cmos镜头获取图像，对图像进行分析，然后推进和对准光纤;
+			\item 放电：两根电极棒释放瞬间高压，击穿空气，击穿空气后会产生一个瞬间的电弧，电弧会产生高温，将已经对准的两条光纤的前端融化，并同时推进两根光纤达到熔接两根光纤的目的
+		\end{itemize}
+	\item 责任描述
+		\begin{itemize}
+			\item 温度传感器TMP421，湿度传感器SHT20，气压传感器CPS120，数字电位器MAX5482驱动程序开发;
+			\item 封装设备（步进电机，加热器，温度传感器，气压传感器，湿度传感器，高压板）为上层应用提供接口;
+			\item 具体业务功能模块开发：熔接机放电校正功能，缩进量测试等功能开发。
+		\end{itemize}
+\end{itemize}}
+\cventry{2012.10--2013.6}{高速摄像板软件开发}{linux}{ARM(dm3730)+FPGA+SENSOR(vita1300)}{c/c++}{
+	\begin{itemize}%
+	\item 项目描述
+		\begin{itemize}
+			\item该板主要针对光纤熔接机的熔解过程而设计，采用高速的CMOS芯片能够拍到光纤的熔解过程，一秒能达到500帧的速率，使用DDR芯片存储拍到的图像数据，能够存最少10S的图像数据，ARM将存储的图像数据取出在显示器上显示出来，ARM和FPGA之间采用GPMC接口，FPGA实现和DDR芯片以及CMOS芯片之间接口，FPGA和CMOS芯片之间是并行高速接口，并将像素点从帧中解出存入DDR芯片，该单板拥有USB，网口等多种外围接口，和CMOS板之间采用柔性FPC排线实现高速连接
+		\end{itemize}
+	\item 责任描述
+		\begin{itemize}
+			\item 配合硬件测试各个模块的基本功能，如usb，网口等;
+			\item fpga读写ddr功能测试;
+			\item cmos传感器驱动程序开发;
+			\item cmos传感器控制程序，图像读取，存储。
+		\end{itemize}
+	\end{itemize}}
+% \cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
+% \subsection{其他}
+% \cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
 
 \section{语言技能}
-\cvitemwithcomment{语言 1}{水平}{评价}
-\cvitemwithcomment{语言 2}{水平}{评价}
-\cvitemwithcomment{语言 3}{水平}{评价}
+\cvitemwithcomment{英语}{四级}{熟练}
 
 \section{计算机技能}
-\cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
-\cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
-\cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
+\cventry{2012.7}{嵌入式linux工程师}{工信部软件和集成电路促进中心}{}{}{}
+% \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
+% \cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
 
 \section{个人兴趣}
-\cvitem{爱好 1}{\small 说明}
-\cvitem{爱好 2}{\small 说明}
-\cvitem{爱好 3}{\small 说明}
+\cvitem{篮球}{\small 平时爱好运动，锻炼身体同时磨练意志。}
 
-\section{其他 1}
-\cvlistitem{项目 1}
-\cvlistitem{项目 2}
-\cvlistitem{项目 3}
+% \section{其他 1}
+% \cvlistitem{项目 1}
+% \cvlistitem{项目 2}
+% \cvlistitem{项目 3}
 
 \renewcommand{\listitemsymbol}{-}             % 改变列表符号
 
-\section{其他 2}
-\cvlistdoubleitem{项目 1}{项目 4}
-\cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
-\cvlistdoubleitem{项目 3}{}
+% \section{其他 2}
+% \cvlistdoubleitem{项目 1}{项目 4}
+% \cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
+% \cvlistdoubleitem{项目 3}{}
+
+\section{自我评价}
+\cvline{性格}{开朗、活泼、乐观}
+\cvline{学习}{勤奋严谨，有钻研精神，动手能力强，有很强的自学能力}
+\cvline{生活}{勤俭节约，吃苦耐劳，热爱集体，乐于助人，积极参加各类公共活动，有良好的人际关系}
+\cvline{工作}{做事细心，认真负责，能够高效率的完成工作，易于沟通，具有良好的创新意识和团队意识，热爱自己从事的工作，敢挑重担}
 
 % 来自BibTeX文件但不使用multibib包的出版物
 %\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
