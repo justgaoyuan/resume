@@ -58,13 +58,14 @@
 \cventry{2012.5 -- 至今}{嵌入式软件工程师}{南京}{吉隆光纤通信股份有限公司}{}{%\newline{}%
 \begin{itemize}%
 	\item 熔接机软件，负责部分驱动程序及业务模块开发工作。
+	\item 开发环境主要是 Linux 和 C/C++
 	\item 熟悉openembeded、yocto，使用其构建嵌入式linux开发环境。
 	\item 软件版本管理，软件包编译及发布。
 	\item 熟练使用git, gitweb / gitlab / ftp / tftp / http / cms / iptables 有一定的配置经验。
 \end{itemize}}
 
 \section{项目经验}
-\cventry{2012.9--2014.4}{光纤熔接机控制软件开发}{}{}{}{
+\cventry{}{光纤熔接机控制软件开发}{}{}{}{
 \begin{itemize}%
 	\item 项目描述：
 		\begin{itemize}
@@ -78,18 +79,18 @@
 			\item 具体业务功能模块开发：熔接机放电校正功能，缩进量测试等功能开发。
 		\end{itemize}
 \end{itemize}}
-\cventry{2012.10--2013.6}{高速摄像板软件开发}{linux}{ARM(dm3730)+FPGA+SENSOR(vita1300)}{c/c++}{
+\cventry{}{高速摄像板软件开发}{}{}{}{
 	\begin{itemize}%
 	\item 项目描述
 		\begin{itemize}
-			\item该板主要针对光纤熔接机的熔解过程而设计，采用高速的CMOS芯片能够拍到光纤的熔解过程，一秒能达到500帧的速率，使用DDR芯片存储拍到的图像数据，能够存最少10S的图像数据，ARM将存储的图像数据取出在显示器上显示出来，ARM和FPGA之间采用GPMC接口，FPGA实现和DDR芯片以及CMOS芯片之间接口，FPGA和CMOS芯片之间是并行高速接口，并将像素点从帧中解出存入DDR芯片，该单板拥有USB，网口等多种外围接口，和CMOS板之间采用柔性FPC排线实现高速连接
+			\item ARM(dm3730)+FPGA+SENSOR(vita1300)
+			\item该板主要针对光纤熔接机的熔接过程而设计，采用高速的CMOS芯片能够拍到光纤的熔解过程，一秒能达到500帧的速率，使用DDR芯片存储拍到的图像数据，能够存最少10S的图像数据，ARM将存储的图像数据取出在显示器上显示出来，ARM和FPGA之间采用GPMC接口，FPGA实现和DDR芯片以及CMOS芯片之间接口，FPGA和CMOS芯片之间是并行高速接口，并将像素点从帧中解出存入DDR芯片，该单板拥有USB，网口等多种外围接口，和CMOS板之间采用柔性FPC排线实现高速连接
 		\end{itemize}
 	\item 责任描述
 		\begin{itemize}
-			\item 配合硬件测试各个模块的基本功能，如usb，网口等;
-			\item fpga读写ddr功能测试;
-			\item cmos传感器驱动程序开发;
-			\item cmos传感器控制程序，图像读取，存储。
+			\item 配合硬件测试硬件模块的基本功能usb、网口、SD卡、VGA等。
+			\item vita1300 调试及驱动程序。
+			\item Arm从DDR从读数据并保存到SD卡上，图像数据的慢速回放。
 		\end{itemize}
 	\end{itemize}}
 % \cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
