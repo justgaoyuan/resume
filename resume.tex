@@ -8,42 +8,30 @@
 
 \documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
-% moderncv 主题
 \moderncvstyle{classic}                        % 选项参数是 ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
 \moderncvcolor{blue}                          % 选项参数是 ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
-%\nopagenumbers{}                             % 消除注释以取消自动页码生成功能
+%\nopagenumbers{}
 
-% 字符编码
-\usepackage[utf8]{inputenc}                   % 替换你正在使用的编码
+\usepackage[utf8]{inputenc}
 \usepackage{CJKutf8}
 
-% 调整页面出血
 \usepackage[scale=0.75]{geometry}
-\setlength{\hintscolumnwidth}{3cm}           % 如果你希望改变日期栏的宽度
+\setlength{\hintscolumnwidth}{3cm}           
 
-% 个人信息
 \name{高远}{}
-\title{justgaoyuan}                     % 可选项、如不需要可删除本行
-\phone[mobile]{+15951989141}              % 可选项、如不需要可删除本行
-%\phone[fixed]{+15951989141}               % 可选项、如不需要可删除本行
-\email{justgaoyuan@gmail.com}                    % 可选项、如不需要可删除本行
-\address{南京浦口区}            % 可选项、如不需要可删除本行
-\homepage{https://github.com/justgaoyuan}                  % 可选项、如不需要可删除本行
-\extrainfo{}                 % 可选项、如不需要可删除本行
-\photo[64pt][0.1pt]{picture}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
-\quote{}                          % 可选项、如不需要可删除本行
+\title{justgaoyuan}
+\phone[mobile]{15951989141}
+\email{justgaoyuan@gmail.com}
+\address{南京浦口区}
+\homepage{https://github.com/justgaoyuan}
+\extrainfo{}
+\photo[64pt][0.1pt]{picture}
+%\quote{}
 
-% 显示索引号;仅用于在简历中使用了引言
-%\makeatletter
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
-%\makeatother
+\makeatletter
+\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+\makeatother
 
-% 分类索引
-%\usepackage{multibib}
-%\newcites{book,misc}{{Books},{Others}}
-%----------------------------------------------------------------------------------
-%            内容
-%----------------------------------------------------------------------------------
 \begin{document}
 \begin{CJK}{UTF8}{gbsn}                       % 详情参阅CJK文件包
 \maketitle
@@ -55,13 +43,13 @@
 \cvcomputer{出生日期}{1989-4-20}{政治面貌}{中共党员}
 
 \section{工作背景}
-\cventry{2012.5 -- 至今}{嵌入式软件工程师}{南京}{吉隆光纤通信股份有限公司}{}{%\newline{}%
+\cventry{2012.5 -- 至今}{嵌入式软件工程师}{南京}{吉隆光纤通信股份有限公司}{}{
 \begin{itemize}%
-	\item 熔接机软件，负责部分驱动程序及业务模块开发工作。
-	\item 开发环境主要是 Linux 和 C/C++
+	\item 熔接机软件，负责部分驱动及业务模块开发工作。
+	\item 开发环境主要是 Linux 和 C/C++。
 	\item 熟悉openembeded、yocto，使用其构建嵌入式linux开发环境。
 	\item 软件版本管理，软件包编译及发布。
-	\item 熟练使用git, gitweb / gitlab / ftp / tftp / http / cms / iptables 有一定的配置经验。
+	\item 熟练使用git, gitweb / gitlab / ftp / tftp / http / samba / cms / iptables 有一定的配置经验。
 \end{itemize}}
 
 \section{项目经验}
@@ -75,8 +63,9 @@
 	\item 责任描述
 		\begin{itemize}
 			\item 温度传感器TMP421，湿度传感器SHT20，气压传感器CPS120，数字电位器MAX5482驱动程序开发;
-			\item 封装设备（步进电机，加热器，温度传感器，气压传感器，湿度传感器，高压板）为上层应用提供接口;
+			\item 封装设备（步进电机，加热器，温度气压湿度传感器，高压板等）为上层应用提供接口;
 			\item 具体业务功能模块开发：熔接机放电校正功能，缩进量测试等功能开发。
+			\item 部分图像处理算法
 		\end{itemize}
 \end{itemize}}
 \cventry{}{高速摄像板软件开发}{}{}{}{
@@ -93,65 +82,28 @@
 			\item Arm从DDR从读数据并保存到SD卡上，图像数据的慢速回放。
 		\end{itemize}
 	\end{itemize}}
-% \cventry{年 -- 年}{职位}{公司}{城市}{}{说明行1\newline{}说明行2}
-% \subsection{其他}
-% \cventry{年 -- 年}{职位}{公司}{城市}{}{说明}
 
 \section{语言技能}
 \cvitemwithcomment{英语}{四级}{}
 
-\section{计算机技能}
+% \section{计算机技能}
 % \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
-% \cvdoubleitem{类别 2}{XXX, YYY, ZZZ}{类别 5}{XXX, YYY, ZZZ}
-% \cvdoubleitem{类别 3}{XXX, YYY, ZZZ}{类别 6}{XXX, YYY, ZZZ}
 
 \section{个人兴趣}
 \cvitem{篮球}{\small 控球后卫，喜欢团队篮球，享受彼此配合共同努力争取胜利。}
 
-% \section{其他 1}
-% \cvlistitem{项目 1}
-% \cvlistitem{项目 2}
-% \cvlistitem{项目 3}
-
-\renewcommand{\listitemsymbol}{-}             % 改变列表符号
-
-% \section{其他 2}
-% \cvlistdoubleitem{项目 1}{项目 4}
-% \cvlistdoubleitem{项目 2}{项目 5\cite{book1}}
-% \cvlistdoubleitem{项目 3}{}
+\renewcommand{\listitemsymbol}{-}
 
 \section{自我评价}
-\cvline{性格}{开朗、活泼、乐观}
-\cvline{学习}{勤奋严谨，有钻研精神，动手能力强，有很强的自学能力}
-\cvline{生活}{勤俭节约，吃苦耐劳，热爱集体，乐于助人，积极参加各类公共活动，有良好的人际关系}
-\cvline{工作}{做事细心，认真负责，能够高效率的完成工作，易于沟通，具有良好的创新意识和团队意识，热爱自己从事的工作，敢挑重担}
-
+\cvline{}{勤奋严谨，有钻研精神，动手能力强，有很强的自学能力}
 
 \section{教育背景}
 \cventry{2008--2012}{本科}{江苏科技大学}{镇江}{\textit{计算机科学与技术}}{}  % 第3到第6编码可留白
 
-% \section{毕业论文}
-% \cvitem{题目}{\emph{题目}}
-% \cvitem{导师}{导师}
-% \cvitem{说明}{\small 论文简介}
 
-% 来自BibTeX文件但不使用multibib包的出版物
-%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
 \nocite{*}
 \bibliographystyle{plain}
 \bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
 
-% 来自BibTeX文件并使用multibib包的出版物
-%\section{出版物}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
-
 \clearpage\end{CJK}
 \end{document}
-
-
-%% 文件结尾 `template-zh.tex'.
