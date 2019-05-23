@@ -10,7 +10,7 @@
 
 \moderncvstyle{classic}                        % options ‘casual’, ‘classic’, ‘oldstyle’ 和 ’banking’
 \moderncvcolor{blue}                           % options ‘blue’ (默认)、‘orange’、‘green’、‘red’、‘purple’ 和 ‘grey’
-%\nopagenumbers{}
+\nopagenumbers{}
 
 \usepackage[utf8]{inputenc}
 \usepackage{CJKutf8}
@@ -19,8 +19,8 @@
 \setlength{\hintscolumnwidth}{3cm}           
 
 \name{高远}{}
-\title{justgaoyuan}
-\phone[mobile]{15951989141}
+% \title{justgaoyuan}
+\phone[mobile]{17712854298}
 \email{justgaoyuan@gmail.com}
 \address{南京浦口区}
 \homepage{https://github.com/justgaoyuan}
@@ -37,69 +37,87 @@
 \maketitle
 
 \section{基本信息}
-\cvcomputer{姓名}{高远}{性别}{男}
-\cvcomputer{民族}{汉族}{籍贯}{江苏宿迁}
-\cvcomputer{学历}{本科}{专业}{计算机科学与技术}
-\cvcomputer{出生日期}{1989-4-20}{政治面貌}{中共党员}
+	\cvcomputer{姓名}{高远}{性别}{男}
+	\cvcomputer{民族}{汉族}{籍贯}{江苏宿迁}
+	\cvcomputer{学历}{本科}{专业}{计算机科学与技术}
+	\cvcomputer{出生日期}{1989-4-20}{政治面貌}{中共党员}
 
 \section{工作背景}
-\cventry{2012.5 -- 至今}{嵌入式软件工程师}{南京}{吉隆光纤通信股份有限公司}{}{
-\begin{itemize}%
-	\item 熔接机软件：驱动、业务、图像处理、校正算法等;
-	\item 开发环境主要是Arch Linux ， 主要使用C/C++， 脚本语言bash也有一定的使用经验;
+\cventry{2012.6 -- 至今}{嵌入式软件工程师}{南京}{南京吉隆光纤通信股份有限公司}{}{
+\begin{itemize}
+	\item 熔接机控制软件：驱动、业务、图像处理、放电强度校正算法等;
+	\item 开发环境主要是Linux ，主要使用C/C++，脚本语言bash也有一定的使用经验;
 	\item 熟悉openembeded、yocto，使用其构建嵌入式linux系统;
 	\item 软件版本管理，小团队代码托管服务器的维护，软件包编译及发布;
-	\item gitweb / gitlab / ftp / tftp / http / samba / iptables 有一定的配置维护经验;
-	\item 阅读同类产品厂商专利，理解并进行尝试。
+	\item gitweb / gitlab / ftp / http / samba / iptables / docker 有一定的配置维护经验;
 \end{itemize}}
 
 \section{项目经验}
-\cventry{}{光纤熔接机控制软件开发}{}{}{}{
-\begin{itemize}%
-	\item 项目描述：
-		\begin{itemize}
-			\item 光纤推进与对准：通过两路cmos镜头获取图像，对图像进行分析，推进和对准光纤;
-			\item 放电：电极放电，电弧会产生高温，将已经对准的两条光纤的前端融化，并同时推进两根光纤将两根光纤熔接起来。
-		\end{itemize}
-	\item 责任描述
-		\begin{itemize}
-			\item 温度、湿度、气压传感器，数字电位器等驱动程序开发;
-			\item 封装设备（步进电机，加热器，温度气压湿度传感器，高压板，摄像头等）为上层应用提供接口;
-			\item 具体业务功能模块开发；
-			\item 图像处理算法，放电强度校正，实时校正算法等。
-		\end{itemize}
-\end{itemize}}
-\cventry{}{高速摄像板软件开发}{}{}{}{
-	\begin{itemize}
-	\item 项目描述
-		\begin{itemize}
-			\item ARM(dm3730)+FPGA+SENSOR(vita1300)
-			\item该板主要针对光纤熔接机的熔接过程而设计，采用高速的CMOS芯片能够拍到光纤的熔解过程，一秒能达到500帧的速率，使用DDR芯片存储拍到的图像数据，能够存最少10S的图像数据，ARM将存储的图像数据取出在显示器上显示出来，ARM和FPGA之间采用GPMC接口，FPGA实现和DDR芯片以及CMOS芯片之间接口，FPGA和CMOS芯片之间是并行高速接口，并将像素点从帧中解出存入DDR芯片。
-		\end{itemize}
-	\item 责任描述
-		\begin{itemize}
-			\item 配合硬件测试硬件模块的基本功能usb、网口、SD卡、VGA等。
-			\item vita1300 调试及驱动程序。
-			\item Arm从DDR从读数据并保存到SD卡上，图像数据的慢速回放及存储。
-		\end{itemize}
+\cventry{}{光纤熔接机控制软件}{}{}{}{
+	\begin{itemize}%
+		\item 项目描述：
+			\begin{itemize}
+				\item 通过高压放电高温将断的光纤接续起来，用于光纤光缆的维护。
+				\item 光纤推进与对准：通过两路镜头获取图像进行分析，驱动电机推进、对准光纤;
+				\item 放电：电极放电，电弧会产生高温，将已经对准的两条光纤的前端融化，并同时推进两根光纤将两根光纤熔接起来。
+			\end{itemize}
+		\item 责任描述
+			\begin{itemize}
+				\item 温度、湿度、气压传感器，数字电位器、lcd屏幕、图像传感器等驱动程序开发;
+				\item 封装设备（步进电机、加热器、温度气压湿度传感器、高压板、摄像头等）为上层应用提供接口;
+				\item 业务功能（熔接流程、放电校正等）开发；
+				\item 图像处理算法，放电强度校正，实时校正算法等。
+			\end{itemize}
 	\end{itemize}}
 
+	\cventry{}{高速摄像板}{}{}{}{
+		\begin{itemize}
+		\item 项目描述
+			\begin{itemize}
+				\item ARM(dm3730)+FPGA+SENSOR(vita1300)
+				\item 该板为了分析光纤熔接过程而设计，采用高速的CMOS芯片拍摄光纤的熔接过程，速率最大为500fps，fpga将图像缓存在ddr中，ARM读取图像并进行慢速回放和存储。
+			\end{itemize}
+		\item 责任描述
+			\begin{itemize}
+				\item 配合硬件测试硬件模块的基本功能usb、网口、SD卡、VGA等。
+				\item vita1300 调试及驱动程序。
+				\item Arm从DDR从读数据并保存到SD卡上，图像数据的慢速回放及存储。
+			\end{itemize}
+	\end{itemize}}
+
+\cventry{}{光时域反射仪}{}{}{}{
+	\begin{itemize}%
+		\item 项目描述：
+			\begin{itemize}
+				\item am335x + fpga;
+				\item OTDR是利用光在光纤中传输时的瑞利散射和菲涅尔反射所产生的背向散射而制成的精密的光仪表，应用于光缆线路的维护、施工之中，可进行光纤长度、光纤的传输衰减、接头衰减和故障定位等的测量。
+			\end{itemize}
+		\item 责任描述
+			\begin{itemize}
+				\item bootloader移植，linux内核移植及裁剪，fpga、lcd、触摸屏等设备驱动开发;
+				\item 使用yocto制作交叉编译工具链，构建完整的嵌入式linux系统;
+				\item 与硬件工程师进行外围器件板级调试;
+				\item fpga与arm之间的接口协议约定及与fpga工程师的联合调试;
+				\item qt版本选择及移植。
+			\end{itemize}
+\end{itemize}}
+
 \section{语言技能}
-\cvitemwithcomment{英语}{四级}{}
+	\cvitemwithcomment{英语}{六级}{}
 
 % \section{计算机技能}
 % \cvdoubleitem{类别 1}{XXX, YYY, ZZZ}{类别 4}{XXX, YYY, ZZZ}
 
 \section{个人兴趣}
-\cvitem{篮球}{\small 控球后卫，喜欢团队篮球，享受彼此配合共同努力争取胜利。}
+	\cvitem{篮球}{\small 控球后卫，喜欢团队篮球，享受彼此配合共同努力争取胜利。}
 
-\renewcommand{\listitemsymbol}{-}
+% \renewcommand{\listitemsymbol}{-}
 
 \section{自我评价}
-\cvline{}{勤奋严谨，有钻研精神，动手能力强，有很强的自学能力}
+	\cvline{}{勤奋严谨，有钻研精神，动手能力强，有较强的自学能力。}
 
 \section{教育背景}
-\cventry{2008--2012}{本科}{江苏科技大学}{镇江}{\textit{计算机科学与技术}}{}
+	\cventry{2008--2012}{本科}{江苏科技大学}{镇江}{\textit{计算机科学与技术}}{}
 
 
 \nocite{*}
